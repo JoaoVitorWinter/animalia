@@ -17,7 +17,7 @@ function init() {
             targets[i].addEventListener("targetFound", (e) => {
                 if (localStorage.getItem("som") == i) {
                     alert("Acertou, boa.");
-                    localStorage.setItem("som", (i + 1));
+                    localStorage.setItem("som", (localStorage.setItem("som") + 1));
                     trocarSom();
                 } else {
                     alert("Errouuuuuuuuuuuuu!");
